@@ -1,34 +1,43 @@
 body {
-    padding: 15px;
-    background: #222222;
-    color: #ffffff;
+  padding: 15px;
+  background: #222222;
+  color: #ffffff;
 }
 
 .top-wrapper {
-    padding: 15px;
-    clear: both;
-    width: 100%;
-    height: 70px;
+  padding: 15px;
+  clear: both;
+  width: 100%;
+  height: 70px;
 }
 
 .top-wrapper img {
-    margin-right: 10px;
-    height: 70px;
-    float: left;
+  margin-right: 10px;
+  height: 70px;
+  float: left;
 }
 
 .top-wrapper h1 {
-    float: left;
+  float: left;
 }
 
-.instruction-wrapper {
-    padding: 10px;
+.instruction-wrapper,
+.zip-extract-wrapper,
+.display-wrapper {
+  padding: 10px;
 }
 
 b.yellow {
-    color: yellow;
+  color: yellow;
 }
 
-.display-wrapper {
-    padding: 10px;
+.zip-extract-form{
+    background: #2f2f2f;
+    color: white;
+}
+
+.column{
+  columns: 100px 6;
+  column-gap: 40px;
+  column-rule: 1px solid whitesmoke;
 }
