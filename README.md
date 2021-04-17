@@ -1,20 +1,23 @@
 # Digi-X Engineering Internship Assessment
 
-Hi,
+## upload-extract-display Code Explanation
 
-Congratulations. The next step for you is to complete this assessment.
+### Upload
 
+1. A HTML form is created in the HTML template where the user can upload the zip file containing the images. A PHP code is written at the top of index.php to connect with the HTML form.
 
-## What you need to do?
+2. When the user clicks the button "Upload", the HTML form will send a POST request and the PHP code will read said request.
 
-1. Clone this repo
-2. Go and follow instruction in "Assessments/2021/upload-extract-display/index.html"
-3. Preview: https://htmlpreview.github.io/?https://github.com/michPhil/dx-intern-assessment/blob/master/Assessments/2021/upload-extract-display/index.html
+3. The PHP code will scan the uploaded file for its directory and contents. The PHP code will proceed with extraction if the uploaded file is confirmed to be a zip file.
 
+### Extract
 
-## What you need to know?
+1. The PHP code will create a path for the zip file to extract to and proceed to extract the zip file to said path, thus creating a new extracted file.
 
-1. All projects are web based applications
-2. Finish your assessment within 1 week
-3. Please ask if anything is unclear
-4. Please follow instruction, no points in doing something fancy, yet no following instructions
+2. Once the extraction is complete, the ZipArchive module will be closed and the PHP code will proceed with displaying the images into the HTML template.
+
+### Display
+
+1. The PHP code will scan the directory of the extracted file and will loop through all the images in the file.
+
+2. Every image is echoed into the HTML template where it is targeted towards until the loop ends.
